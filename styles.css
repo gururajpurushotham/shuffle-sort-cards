@@ -1,0 +1,128 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 40px;
+}
+
+.header {
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.column {
+	flex: 0 0 100%;
+	max-width: 100%;
+	height: 150px;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 3rem;
+	color: black;
+	background-color: #EFEFEF;
+	display: flex;
+}
+
+.column-text {
+	margin: auto;
+}
+
+.content-area {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+.column-wrap, .btn-wrap {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.btn-div {
+	width: 50%;
+	padding: 1rem;
+}
+
+.btn {
+	width: 100%;
+	height: 4rem;
+	font-weight: bold;
+	font-size: 2rem;
+	color: white;
+	margin: 1rem 1rem 0 0;
+    box-shadow: 0 3px 6px #72C3DC,  0 3px 6px #72C3DC;
+    border: 2px solid #72C3DC;
+    background-color: #72C3DC;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+}
+
+.row {
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.name-wrap {
+	width: 100%;
+	justify-content: center;
+}
+
+.filler {
+	width: 2%;
+}
+
+@media screen and (min-device-width: 376px) {
+	.column-wrap {
+		width: 75%;
+		float: left;
+	}
+	
+	.btn-wrap {
+		width: 25%;
+		float: right;
+	}
+	
+	.btn-div {
+		width: 100%;
+	}
+	
+	.column {
+		flex: 0 0 33.33334%;
+		max-width: 33.33334%;
+		color: white;
+	}
+	
+	.filler {
+		width: 100%;
+		display: flex;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	.desktop {
+		display: flex;
+	}
+}
